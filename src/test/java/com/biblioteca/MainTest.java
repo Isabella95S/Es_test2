@@ -18,7 +18,7 @@ class MainTest {
         OffsetDateTime dateTime = OffsetDateTime.parse("2002-03-01T13:00:00Z");
 
         // Formattazione della data in vari stili
-        String fullFormat = Main.formatDateTime(dateTime, DateTimeFormatter.ofPattern("EEEE, d MMMM yyyy HH:mm:ss O", Locale.ITALIAN));
+        String fullFormat = Main.formatDateTime(dateTime, DateTimeFormatter.ofPattern("EEEE, d MMMM yyyy HH:mm:ss Ogit", Locale.ITALIAN));
         String mediumFormat = Main.formatDateTime(dateTime, DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm:ss", Locale.ITALIAN));
         String shortFormat = Main.formatDateTime(dateTime, DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm", Locale.ITALIAN));
 
