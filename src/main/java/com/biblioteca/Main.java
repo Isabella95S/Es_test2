@@ -26,4 +26,9 @@ public static void main(String[] args) {
 public static String formatDateTime(OffsetDateTime dateTime, DateTimeFormatter formatter) {
     return dateTime.format(formatter);
 }
+
+public static int getYear(OffsetDateTime dateTime) {
+    return dateTime.getYear();
+
+}
 }
